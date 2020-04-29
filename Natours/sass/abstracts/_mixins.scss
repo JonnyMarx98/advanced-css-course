@@ -1,0 +1,11 @@
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin columnWidth($num, $numCols) {
+  width: calc( #{$num} * ((100% - (#{$gutter-horizontal}) * (#{$numCols} - 1) ) / (#{$numCols})) + (#{$num} - 1) * #{$gutter-horizontal}); 
+}
