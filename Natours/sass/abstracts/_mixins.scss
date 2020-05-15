@@ -9,3 +9,10 @@
 @mixin columnWidth($num, $numCols) {
   width: calc( #{$num} * ((100% - (#{$gutter-horizontal}) * (#{$numCols} - 1) ) / (#{$numCols})) + (#{$num} - 1) * #{$gutter-horizontal}); 
 }
+
+@mixin absCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
