@@ -18,6 +18,9 @@
 }
 .u-margin-b-sm {
   margin-bottom: 1.5rem !important;
+  @include respond(tab-port) {
+    margin-bottom: 1rem !important;
+  }
 }
 
 .u-margin-t-xlg {
